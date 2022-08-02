@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+  }
+html{
+    overflow: scroll;
+}
+body {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px ;
+    width: 100%;
+    height: 100vh;
+}
+.header , .hero, .sidebar, .content, .extra, .images, .posts, .footer{
+    background-color: white;
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+
+}
+
+.header{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    background-color: #23D4FF;
+
+}
+
+.hero{
+    grid-column: 1 / 2;
+    grid-row-start: 2 / 3;
+    background-color: #DFCADD;
+    min-height: 300px;
+
+}
+
+.sidebar{
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+    background-color: #80C268;
+    min-height: 400px;
+
+}
+.content{
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    background-color: #EDC527;
+    min-height: 500px;
+
+}
+
+.extra{
+    grid-column:2 /4 ;
+    grid-row: 4 / 5;
+    background-color: #898987 ;
+    min-height: 200px;
+
+}
+
+.images{
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+    background-color: #00B68D ;
+    height: 150px;
+}
+
+.posts{
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+    background-color: #FFCDD4;
+}
+
+.footer {
+    grid-column: 1 / 4;
+    grid-row: 6 / 7;
+    background-color: #FEA500;
+}
+
+ .windows {
+    transform: translateY(400px) translateX(-50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+    align-items: flex-end;
+}
+.windows h3{
+    font-size: 15px;
+    transform: translateX(-24px);
+    color: lightgray;
+    /* justify-content: flex-start; */
+
+}
+.windows p{
+    font-size: 10px;
+    color: lightgray;
+    text-align: left;
+}
+
+.windows2{
+    transform: translateX(-50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+    align-items: flex-end;
+}
+.windows2 h3{
+    font-size: 15px;
+    transform: translateX(-24px);
+    color: lightgray;
+    /* justify-content: flex-start; */
+
+}
+.windows2 p{
+    font-size: 10px;
+    color: lightgray;
+    text-align: left;
+}
